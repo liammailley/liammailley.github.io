@@ -14,6 +14,10 @@
         .title {
             color: #3E4E50;
         }
+
+        .toptitle {
+            text-align: center;
+        }
         
         .container {
             display: flex;
@@ -23,19 +27,30 @@
         }
 
         .image {
-            width: 90%;
+            max-width: 80%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: center;
         }
 
+        .img-cont {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
 
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img class="image" src="hero1.png"></img>
+
+        <h1 class="toptitle">Liam Mailley - IDM 381 - HWK01</h1>
+
+        <div class="img-cont">
+            <img class="image" src="hero1.png"></img>
+        </div>
         <div class="container-2">
             <h1 class="title">Timekettle M3 Language Translator Earbuds</h1>
             <h3 class="desc-header">Website Link</h3>
@@ -49,8 +64,10 @@
             <h3>What do you want to do with this technology?</h3>
             <p>I aim to use this device to prototype a live captions service that integrates with the Timekettle M3. People who are hard of hearing/deaf could carry an additional app that would have almost no latency due to directly connecting to the Timekettle and using its translated words.</p>
         </div>
-        
-        <img class="image" src="hero2.png"></img>
+
+        <div class="img-cont">
+            <img class="image" src="hero2.png"></img>
+        </div>
         <div class="container-2">
             <h1 class="title">Jobot</h1>
             <h3 class="desc-header">Website Link</h3>
@@ -65,7 +82,9 @@
             <p>I would build an app that tracks the AI's trends and breaks them down for better understanding of its usually elusive trends.</p>
         </div>
 
-        <img class="image" src="hero3.png"></img>
+        <div class="img-cont">
+            <img class="image" src="hero3.png"></img>
+        </div>
         <div class="container-2">
             <h1 class="title">Echo Hub 8</h1>
             <h3 class="desc-header">Website Link</h3>
