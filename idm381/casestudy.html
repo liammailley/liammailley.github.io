@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Case Study - speakEasy - Liam Mailley</title>
+     <style>
+        body {
+            background-color: #FBEFF1;
+        }
+
+        a {
+            color: #AC540C;
+        }
+
+     h1 {
+          padding-top: 2rem;
+          color: #4A5759;
+     }
+
+     h2 {
+          padding-top: 2rem;
+          color: #4A5759;
+     }
+
+        .title {
+            color: #3E4E50;
+        }
+
+        .toptitle {
+            text-align: center;
+        }
+        
+     .container {
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          padding: 3.5rem;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     }
+
+     .example {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 1rem;
+          border-top: solid;
+     }
+
+     .summary {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 1rem;
+          padding: 2rem;
+          border-top: solid;
+     }
+
+     .questions {
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+     }
+
+     .hero_image {
+          max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+     .wf_image {
+          max-width: 40rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;      
+     }
+
+        .image {
+            max-width: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .img-cont {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          
+          <img class="hero_image" src="speakeasy_hero.png"></img>
+          <h1>Overview</h1>
+          <p>speakEasy is a solution for <b>translator app errors.</b> 
+               Many apps like Google Translate allow for real-time conversational voice translation. Unfortunately, mishearings are common, and one often has no idea that their speech has been mistranslated.
+               speakEasy solves this problem by showing both parties what it heard, and letting the speaker fix any errors, before then retranslating the fixed text and even speaking it again!
+          </p>
+          <h1>Context & Challenge</h1>
+          <h2>Goals & Objectives</h2>
+          <p>
+               This project’s goal is to take a piece of experimental new technology and design a prototype for an interface that uses it in a new and exciting way.
+               I researched experimental technologies, selected one, and then developed wireframes in order to iterate and eventually devlop a Figma-based prototype.
+          </p>
+          <h2>Roles & Responsibilities</h2>
+          <p>
+               This project was done solo. 
+               As an exercise in researching emergent technologies, it allowed me to better understand and embrace the process of designing for something new and unknown.               
+          </p>
+          <h2>Scope</h2>
+          <p>
+               This project was completed over the course of a standard 11-week course. 
+          </p>
+          <h2>Problem Statement</h2>
+          <h3 class="problem_statement">
+               <b>2-way conversational translation apps often incorrectly translate what one says, which can be extremely confusing.</b>
+          </h3>
+          <h1>Process</h1>
+          <h2>Finding Experimental Technology</h2>
+          <p>
+               My first steps were to research new technologies and collect 3 that I would be interested in developing an interface for.
+          </p>
+          <img class="image" src="hero1.png"></img>
+          <p>
+               These are Real-time translator earbuds that integrate music, phone call, and translation features. They eliminate the need for handheld translators.
+          </p>
+          <img class="image" src="hero2.png"></img>
+          <p>
+               This is a video doorbell that detects changes and can automatically react to changes.
+          </p>
+          <img class="image" src="hero3.png"></img>
+          <p>
+               This is a smart home hub device that can control multiple smart devices across a home at once.
+          </p>
+          <p>
+               After some deliberation, and some class input, I decided to focus on the <b>Timekettle M3 Language Translator Earbuds</b> for my project.
+          </p>
+          <h2>Researching Existing Interfaces</h2>
+          <p>
+               I researched Google Translate, ElevenLabs AI Dubbing, and Forum Interpreter to see what competing products were doing in the sphere of AI-assisted translation.
+          </p>
+          <h3>Google Translate</h3>
+          <img class="image" src="screenshot1.png"></img>
+          <p><b>Does Well</b></p>
+          <ul>
+               <li>Internationally recognizable interface and brand</li>
+               <li>Split screen evenly</li>
+               <li>Can translate 2-sided conversation with the Auto feature</li>
+          </ul>
+          <p><b>Does Poorly</b></p>
+          <ul>
+               <li>High latency</li>
+               <li>Accuracy of translated words tends to be low</li>
+          </ul>
+          <p>
+               This is the most recognizable translation app; the Timekettle M3 can help work out the clunkiness of this app.
+          </p>
+          <h3>ElevenLabs AI Dubbing</h3>
+          <img class="image" src="screenshot2.png"></img>
+          <p><b>Does Well</b></p>
+          <ul>
+               <li>Incredibly accurate AI-based translator, very high quality</li>
+               <li>Sounds almost just like the original, just in a different language</li>
+          </ul>
+          <p><b>Does Poorly</b></p>
+          <ul>
+               <li>Output is audio-only, no text</li>
+          </ul>
+          <p>
+               This app shows the potential of AI in translation, but lacks significant text-based output.
+          </p>
+          <h3>Forum Interpreter</h3>
+          <img class="image" src="screenshot3.png"></img>
+          <p><b>Does Well</b></p>
+          <ul>
+               <li>Quickly translates text with the help of AI</li>
+               <li>High accuracy for translations</li>
+          </ul>
+          <p><b>Does Poorly</b></p>
+          <ul>
+               <li>Designed for a 1-sided lecture or conference, so does not support a conversation</li>
+               <li>Shows the text for both languages, but highlights only one language</li>
+          </ul>
+          <p>
+               This product gave me a better idea of how a real-time text translator could work; the idea just needed to be moved to a 2-sided conversation.
+          </p>
+          <h2>Ideating and Wireframing</h2>
+          <p>
+               Wireframing started with creating the basic, low-fidelity critical path of the app.
+               A user can select languages, begin a conversation, and edit a sample message that has been misheard.
+          </p>
+          <img class="wf_image" src="lowfid_speakeasy.png"></img>
+          <p>
+               My mid-fidelity wireframes consisted of adding color and text stylization.
+          </p>
+          <img class="wf_image" src="midfid_speakeasy.png"></img>
+          <p>
+               I also developed a style guide, displaying colors, fonts, and any interactables.
+          </p>
+          <img class="wf_image" src="styleguide_speakeasy.png"></img>
+          <p>
+               For my high-fidelity and final wireframes, I expanded the critical path to insure that all navigation buttons/objects could be interacted with.
+          </p>
+          <img class="wf_image" src="highfid_speakeasy.png"></img>
+          <h1>Solution</h1>
+          <a target="_blank" href="https://www.figma.com/proto/zpcsIWtVVWNc1vqn02V8Yt/LiamMailley_IDM381_HWK03?page-id=149%3A2&type=design&node-id=150-285&viewport=503%2C638%2C0.22&t=dc9z9STkXSsZ89ee-1&scaling=scale-down&mode=design"><b>Test the final prototype here!</b></a>
+          <h1>Results</h1>
+          <p>
+               Overall, this project was an absolute success. speakEasy utilizes a new technology in a way that actively improves upon what is currently offered.
+               My main takeaway from this project is that old ideas have to influence new ones. I was able to create a superior interface only by learning from the interfaces that had already been created.
+               For me, this has emphasized the importance of competitor research in my other projects.
+          </p>
+
+
+
+     </div>
+</head>
+</body>
+</html>
